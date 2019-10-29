@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         borderWidth: 1,
         flexDirection: 'row',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        width: '60%'
     },
 });
 
