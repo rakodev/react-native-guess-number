@@ -6,6 +6,7 @@ import NumberContainer from '../components/NumberContainer';
 import Card from '../components/Card';
 import BodyText from '../components/BodyText';
 import MainButton from '../components/MainButton';
+import ListItems from '../components/ListItems'; 
 
 const generateRandomBetween = (min, max, exclude) => {
     min = Math.ceil(min);
@@ -60,13 +61,13 @@ const GameScreen = props => {
                     <Ionicons name='md-add' size={24} color='white' />
                 </MainButton>
             </Card>
-            <ScrollView>
-                {pastGuesses.map(guess => 
-                    <View key={guess}>
-                        <Text>{guess}</Text>
-                    </View>
-                )}
-            </ScrollView>
+            <View style={styles.listContainer}>
+                <ScrollView>
+                    {pastGuesses.map((guess,index) =>
+                        <ListItems value={guess} index={pastGuesses.length - index} />
+                    )}
+                </ScrollView>
+            </View>
         </View>
     );
 };
@@ -83,6 +84,10 @@ const styles = StyleSheet.create({
         marginTop: 20,
         width: 400,
         maxWidth: '90%',
+    },
+    listContainer: {
+        flex: 1,
+        width: '80%'
     }
 });
 
