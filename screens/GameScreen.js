@@ -1,12 +1,11 @@
 import React, {useState, useRef, useEffect} from 'react';
-import { View, Text, StyleSheet, Button, Alert, ScrollView, FlatList } from 'react-native';
+import { View, StyleSheet, Alert, FlatList, Dimensions } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 import NumberContainer from '../components/NumberContainer';
 import Card from '../components/Card';
 import BodyText from '../components/BodyText';
 import MainButton from '../components/MainButton';
-import ListItems from '../components/ListItems'; 
 
 const generateRandomBetween = (min, max, exclude) => {
     min = Math.ceil(min);
@@ -91,14 +90,14 @@ const styles = StyleSheet.create({
     screen: {
         flex: 1,
         padding: 10,
-        alignItems: 'center'
+        alignItems: 'center',
+        width: '100%',
     },
     buttonContainer: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        marginTop: 20,
-        width: 400,
-        maxWidth: '90%',
+        marginTop: Dimensions.get('window').height > 600 ? 20 : 5,
+        width: '90%',
     },
     listContainer: {
         flex: 1,
