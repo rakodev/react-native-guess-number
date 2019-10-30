@@ -18,4 +18,5 @@ This is my first React Native application build with Expo.
     - `a` option opens the Android version.
 
 ### The result is visible here:
-https://youtu.be/diJk9cZhVgI
+https://youtu.be/xiuDnvXpzic
+
