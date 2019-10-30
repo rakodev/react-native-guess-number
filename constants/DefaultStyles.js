@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    infoTitle: {
-        fontSize: 22
-    }
+  infoTitle: {
+    fontSize: 22
+  }
 });
