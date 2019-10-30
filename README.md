@@ -20,3 +20,14 @@ This is my first React Native application build with Expo.
 ### The result is visible here:
 https://youtu.be/xiuDnvXpzic
 
+
+### Good to know
+- React Native components
+    - Dimensions (Responsive design)
+        - https://facebook.github.io/react-native/docs/dimensions
+    - Platform (OS/Platform informations)
+        - https://facebook.github.io/react-native/docs/platform-specific-code
+    - SafeAreaView (Render content within the safe area boundaries of a device)
+        - https://facebook.github.io/react-native/docs/safeareaview
+
+        
