@@ -48,3 +48,8 @@ https://youtu.be/xiuDnvXpzic
     - https://facebook.github.io/react-native/docs/platform-specific-code
   - SafeAreaView (Render content within the safe area boundaries of a device)
     - https://facebook.github.io/react-native/docs/safeareaview
+
+### Other Demo:
+
+- https://github.com/rakodev/react-native-shopping-app
+- https://github.com/rakodev/react-native-meals
